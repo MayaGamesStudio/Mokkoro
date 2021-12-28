@@ -1,6 +1,8 @@
 public enum StatusEnum {
     HEALTH,
-    FOOD,
+    HUNGRY,
     THIRSTY,
-    TIRED
+    FATIGUE,
+    HAPPINESS,
+    CLEANLINESS
 }
