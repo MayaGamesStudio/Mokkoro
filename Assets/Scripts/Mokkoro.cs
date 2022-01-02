@@ -72,7 +72,8 @@ public class Mokkoro : MonoBehaviour, IHaveLevel {
         Statuses[StatusEnum.HAPPINESS].IncreaseValue(20);
     }
 
-    public void Clean() {
-        Statuses[StatusEnum.CLEANLINESS].IncreaseValue(20);
+    public void Clean(float multiplier) {
+        var amount = Statuses[StatusEnum.CLEANLINESS].CurrentValue + Time.deltaTime * multiplier;
+        Statuses[StatusEnum.CLEANLINESS].IncreaseValue(amount);
     }
 }
