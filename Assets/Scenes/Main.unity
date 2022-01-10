@@ -9475,6 +9475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StatusesContainer: {fileID: 1877690530}
+  Bubbles: {fileID: 0}
 --- !u!70 &631249651
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -24007,7 +24008,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e83b585bb7a35bc47b778056e549716f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a6d4e46f7cad354f85db3554bf33d84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24038,6 +24039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 122758707}
+  bubble: {fileID: 85488086123611860, guid: 6b5919195f2bcc34086425db194a523f, type: 3}
 --- !u!223 &1964449818
 Canvas:
   m_ObjectHideFlags: 0

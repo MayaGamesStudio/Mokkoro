@@ -17,6 +17,8 @@ public class Mokkoro : MonoBehaviour, IHaveLevel {
     public int ExpToNextLevel { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
     public Dictionary<int, int> Levels { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
+    [SerializeField] private ParticleSystem Bubbles;
+
     public void LevelUp() {
         throw new System.NotImplementedException();
     }
@@ -73,7 +75,8 @@ public class Mokkoro : MonoBehaviour, IHaveLevel {
     }
 
     public void Clean(float multiplier) {
-        var amount = Statuses[StatusEnum.CLEANLINESS].CurrentValue + Time.deltaTime * multiplier;
+
+        var amount = Time.deltaTime * multiplier;
         Statuses[StatusEnum.CLEANLINESS].IncreaseValue(amount);
     }
 }
