@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f42f06ff6cc543ea942180e019f0fc8d, type: 3}
-  m_Name: UIButton_General
+  m_Script: {fileID: 11500000, guid: 4a7c152520e7a4ff192b331be98a432a, type: 3}
+  m_Name: Burger
   m_EditorClassIdentifier: 
-  CategoryName: General
-  DatabaseType: 0
-  Names:
-  - Back
-  - Kitchen
-  - Unnamed
+  Sprite: {fileID: -7267465608376339970, guid: b59452aff67b6402ba73cf7a089abfad, type: 3}
+  Name: Hamburverga
+  Description: Si te comes esta hamburverga te curas una mierda
+  Price: 75
+  Amount: 50

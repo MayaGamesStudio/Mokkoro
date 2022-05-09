@@ -42,3 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 2824945867
+    locked: 0
+  - name: Store
+    uniqueID: 1995079345
+    locked: 0
+  - name: FloatingUI
+    uniqueID: 3335313793
+    locked: 0

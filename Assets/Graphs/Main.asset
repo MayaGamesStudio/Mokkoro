@@ -83,7 +83,10 @@ MonoBehaviour:
   - Category: Mokkoro
     InstantAction: 0
     Name: Bedroom
-  m_onEnterHideViews: []
+  m_onEnterHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Mokkoro
@@ -113,6 +116,13 @@ MonoBehaviour:
       m_inputSocketId: b4377b09-f287-4cea-be13-e41b20fc214e
       m_outputNodeId: f841439f-19df-4acc-b84d-8917217583f0
       m_outputSocketId: 4c9dcf23-e8c6-45f4-89e6-754c39663f95
+    - m_inputConnectionPoint: {x: -2, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 01176a1d-1e1b-44f0-9e76-4a8cec9824c5
+      m_inputNodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
+      m_inputSocketId: b4377b09-f287-4cea-be13-e41b20fc214e
+      m_outputNodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+      m_outputSocketId: e9e49a7c-bbd8-4fe2-90b1-fcc092cd47fc
     m_connectionPoints:
     - {x: -2, y: 4}
     - {x: 202, y: 4}
@@ -150,6 +160,32 @@ MonoBehaviour:
     m_value: '{"ButtonCategory":"General","ButtonName":"Back","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_connectionMode: 0
+    m_connections:
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: -2, y: 4}
+      m_id: 78109e38-11e6-4f10-9648-447584d391c0
+      m_inputNodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+      m_inputSocketId: 50fc1eee-268a-44f4-a1b5-3bc886422ca1
+      m_outputNodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
+      m_outputSocketId: 6cc5cbad-bb77-4554-ab3c-8e3b0271922d
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 1
+    m_canBeDeleted: 1
+    m_canBeReordered: 1
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 86
+    m_id: 6cc5cbad-bb77-4554-ab3c-8e3b0271922d
+    m_nodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
+    m_socketName: OutputSocket_1
+    m_value: '{"ButtonCategory":"Mokkoro","ButtonName":"Shop Item","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
   m_allowDuplicateNodeName: 0
   m_allowEmptyNodeName: 0
@@ -158,7 +194,7 @@ MonoBehaviour:
   m_useFixedUpdate: 0
   m_useLateUpdate: 0
   m_useUpdate: 0
-  m_height: 128
+  m_height: 152
   m_width: 216
   m_x: 780
   m_y: 840
@@ -174,10 +210,7 @@ MonoBehaviour:
     Name: Store
   m_onEnterHideViews: []
   m_onExitShowViews: []
-  m_onExitHideViews:
-  - Category: Mokkoro
-    InstantAction: 0
-    Name: Store
+  m_onExitHideViews: []
 --- !u!114 &-6695415474433952597
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,7 +368,10 @@ MonoBehaviour:
   - Category: Mokkoro
     InstantAction: 0
     Name: Bathroom
-  m_onEnterHideViews: []
+  m_onEnterHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Mokkoro
@@ -633,7 +669,10 @@ MonoBehaviour:
   - Category: Mokkoro
     InstantAction: 0
     Name: Playing Room
-  m_onEnterHideViews: []
+  m_onEnterHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Mokkoro
@@ -666,11 +705,12 @@ MonoBehaviour:
   - {fileID: -1952483613032228948}
   - {fileID: -305239648913421080}
   - {fileID: -6132133301587659866}
+  - {fileID: 3263001466993860952}
   m_isSubGraph: 0
   m_version: 1
   m_description: 
   m_id: abc2c378-a1a9-4521-9dc6-71ae88518ad0
-  m_lastModified: 132851837623102070
+  m_lastModified: 132863957703757180
 --- !u!114 &403647140654749516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -902,12 +942,111 @@ MonoBehaviour:
   - Category: Mokkoro
     InstantAction: 0
     Name: Training Room
-  m_onEnterHideViews: []
+  m_onEnterHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Mokkoro
     InstantAction: 0
     Name: Training Room
+--- !u!114 &3263001466993860952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 840a439e06374673a9115ed02deb5a54, type: 3}
+  m_Name: UINode
+  m_EditorClassIdentifier: 
+  ErrorNodeNameIsEmpty: 0
+  ErrorDuplicateNameFoundInGraph: 0
+  m_inputSockets:
+  - m_connectionMode: 1
+    m_connections:
+    - m_inputConnectionPoint: {x: 202, y: 4}
+      m_outputConnectionPoint: {x: -2, y: 4}
+      m_id: 78109e38-11e6-4f10-9648-447584d391c0
+      m_inputNodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+      m_inputSocketId: 50fc1eee-268a-44f4-a1b5-3bc886422ca1
+      m_outputNodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
+      m_outputSocketId: 6cc5cbad-bb77-4554-ab3c-8e3b0271922d
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 0
+    m_canBeDeleted: 0
+    m_canBeReordered: 0
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 38
+    m_id: 50fc1eee-268a-44f4-a1b5-3bc886422ca1
+    m_nodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+    m_socketName: InputSocket_0
+    m_value: '{"ButtonCategory":"General","ButtonName":"Unnamed","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_outputSockets:
+  - m_connectionMode: 0
+    m_connections:
+    - m_inputConnectionPoint: {x: -2, y: 4}
+      m_outputConnectionPoint: {x: 202, y: 4}
+      m_id: 01176a1d-1e1b-44f0-9e76-4a8cec9824c5
+      m_inputNodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
+      m_inputSocketId: b4377b09-f287-4cea-be13-e41b20fc214e
+      m_outputNodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+      m_outputSocketId: e9e49a7c-bbd8-4fe2-90b1-fcc092cd47fc
+    m_connectionPoints:
+    - {x: -2, y: 4}
+    - {x: 202, y: 4}
+    m_direction: 1
+    m_canBeDeleted: 1
+    m_canBeReordered: 1
+    m_curveModifier: 0
+    m_height: 24
+    m_width: 216
+    m_x: 0
+    m_y: 62
+    m_id: e9e49a7c-bbd8-4fe2-90b1-fcc092cd47fc
+    m_nodeId: 834aee1d-ce65-4e09-96aa-f014106b507f
+    m_socketName: OutputSocket_0
+    m_value: '{"ButtonCategory":"General","ButtonName":"Back","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_nodeType: 4
+  m_allowDuplicateNodeName: 0
+  m_allowEmptyNodeName: 0
+  m_canBeDeleted: 1
+  m_debugMode: 0
+  m_useFixedUpdate: 0
+  m_useLateUpdate: 0
+  m_useUpdate: 0
+  m_height: 128
+  m_width: 216
+  m_x: 360
+  m_y: 852
+  m_minimumInputSocketsCount: 1
+  m_minimumOutputSocketsCount: 1
+  m_graphId: abc2c378-a1a9-4521-9dc6-71ae88518ad0
+  m_id: 834aee1d-ce65-4e09-96aa-f014106b507f
+  m_name: UI Node
+  m_notes: 
+  m_onEnterShowViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Item Description
+  m_onEnterHideViews: []
+  m_onExitShowViews: []
+  m_onExitHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Item Description
 --- !u!114 &3874001203806028647
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -998,7 +1137,10 @@ MonoBehaviour:
   - Category: Mokkoro
     InstantAction: 0
     Name: Kitchen
-  m_onEnterHideViews: []
+  m_onEnterHideViews:
+  - Category: Mokkoro
+    InstantAction: 0
+    Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
   - Category: Mokkoro

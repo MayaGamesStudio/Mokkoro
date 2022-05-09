@@ -54,16 +54,15 @@ public class Mokkoro : MonoBehaviour, IHaveLevel {
                 healthMultiplier -= status.HighHealthMultiplier;
             }
         }
-        Debug.Log(healthMultiplier);
         healthStatus.HealthUpdate(healthMultiplier);
     }
 
-    public void Feed() {
-        Statuses[StatusEnum.HUNGRY].IncreaseValue(20);
+    public void Feed(int amount) {
+        Statuses[StatusEnum.HUNGRY].IncreaseValue(amount);
     }
 
-    public void Drink() {
-        Statuses[StatusEnum.THIRSTY].IncreaseValue(20);
+    public void Drink(float amount) {
+        Statuses[StatusEnum.THIRSTY].IncreaseValue(amount);
     }
 
     public void Sleep() {

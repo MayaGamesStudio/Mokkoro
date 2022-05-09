@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a7c152520e7a4ff192b331be98a432a, type: 3}
+  m_Name: Spaguetti
+  m_EditorClassIdentifier: 
+  Sprite: {fileID: -8236152365738478413, guid: b59452aff67b6402ba73cf7a089abfad, type: 3}
+  Name: Spaguetti
+  Description: Fino como el pene de tu ex, por eso es que te cura muy poco
+  Price: 50
+  Amount: 25
