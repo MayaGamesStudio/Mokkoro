@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -514,6 +515,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      foods_atlas_17: -1651784229685570732
+      foods_atlas_9: -7267465608376339970
+      foods_atlas_16: 270001243624743368
+      foods_atlas_0: 5536330448758756368
+      foods_atlas_12: -1054731749616359244
+      foods_atlas_20: -7419302962603605960
+      foods_atlas_10: -8685929029874834235
+      foods_atlas_13: 7509875529515533087
+      foods_atlas_8: -8236152365738478413
+      foods_atlas_11: -2618885386646445726
+      foods_atlas_19: 2164073927266517489
+      foods_atlas_21: -1783039175074437785
+      foods_atlas_5: -8356750900441428
+      foods_atlas_15: 4155183528679063948
+      foods_atlas_18: 9188235414718304935
+      foods_atlas_14: 8379440440201518764
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
