@@ -80,16 +80,16 @@ MonoBehaviour:
   m_name: Bedroom
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Bedroom
   m_onEnterHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Bedroom
 --- !u!114 &-7752515679390666390
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_name: Store
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Store
   m_onEnterHideViews: []
@@ -365,16 +365,16 @@ MonoBehaviour:
   m_name: Bathroom
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Bathroom
   m_onEnterHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Bathroom
 --- !u!114 &-3977747950717485477
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: abc2c378-a1a9-4521-9dc6-71ae88518ad0
   m_id: 1ce634ec-9a57-45a9-bbf8-5173a56fce5c
-  m_name: OnClick Mokkoro / Kitchen UIButton
+  m_name: OnClick Custom / Kitchen UIButton
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 1
   m_gameEvent: 
@@ -580,7 +580,7 @@ MonoBehaviour:
   ViewCategory: General
   ViewName: Unnamed
   UIButtonTriggerAction: 0
-  ButtonCategory: Mokkoro
+  ButtonCategory: Custom
   ButtonName: Kitchen
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
@@ -666,16 +666,16 @@ MonoBehaviour:
   m_name: Playing Room
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Playing Room
   m_onEnterHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Playing Room
 --- !u!114 &11400000
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: abc2c378-a1a9-4521-9dc6-71ae88518ad0
-  m_lastModified: 132863957703757180
+  m_lastModified: 133009661772603860
 --- !u!114 &403647140654749516
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1038,13 +1038,13 @@ MonoBehaviour:
   m_name: UI Node
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Item Description
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Item Description
 --- !u!114 &3874001203806028647
@@ -1134,16 +1134,16 @@ MonoBehaviour:
   m_name: Kitchen
   m_notes: 
   m_onEnterShowViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Kitchen
   m_onEnterHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Mokkoro
+  - Category: Custom
     InstantAction: 0
     Name: Kitchen
 --- !u!114 &4238101280116080992

@@ -15,10 +15,6 @@ MonoBehaviour:
   DatabaseType: 0
   CategoryNames:
   - Custom
-  - Example
   - General
-  - Mokkoro
   Categories:
-  - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
-  - {fileID: 11400000, guid: 5587cecd3a20646cfbb9be0f8b18601a, type: 2}
-  - {fileID: 11400000, guid: 6303bcf77cff4480696dda558ac75a83, type: 2}
+  - {fileID: 11400000, guid: 44b389943c4de4a7e974690614a30014, type: 2}

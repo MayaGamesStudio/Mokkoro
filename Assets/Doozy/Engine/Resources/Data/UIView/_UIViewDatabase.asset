@@ -17,8 +17,6 @@ MonoBehaviour:
   - Custom
   - Example
   - General
-  - Mokkoro
   Categories:
   - {fileID: 11400000, guid: b01e98f4801f7124ba39e1dac4debf90, type: 2}
-  - {fileID: 11400000, guid: 121f164305ab34bb0b5ecbd338039e4e, type: 2}
-  - {fileID: 11400000, guid: ce4673b02291941a1aad770ddae7e3ae, type: 2}
+  - {fileID: 11400000, guid: 6e7f8fe30b00842d19b05ab5a58adcc0, type: 2}
