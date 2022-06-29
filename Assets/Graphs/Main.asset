@@ -80,16 +80,16 @@ MonoBehaviour:
   m_name: Bedroom
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Bedroom
   m_onEnterHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Bedroom
 --- !u!114 &-7752515679390666390
@@ -183,7 +183,7 @@ MonoBehaviour:
     m_id: 6cc5cbad-bb77-4554-ab3c-8e3b0271922d
     m_nodeId: 5de043dd-3b18-48fa-aecc-cd8c0eabb8b7
     m_socketName: OutputSocket_1
-    m_value: '{"ButtonCategory":"Mokkoro","ButtonName":"Shop Item","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
+    m_value: '{"ButtonCategory":"Mokkoro","ButtonName":"Kitchen","GameEvent":"","TimeDelay":3.0,"Trigger":0}'
     m_valueTypeQualifiedName: Doozy.Engine.UI.Connections.UIConnection, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_nodeType: 4
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_name: Store
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Store
   m_onEnterHideViews: []
@@ -365,16 +365,16 @@ MonoBehaviour:
   m_name: Bathroom
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Bathroom
   m_onEnterHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Bathroom
 --- !u!114 &-3977747950717485477
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: abc2c378-a1a9-4521-9dc6-71ae88518ad0
   m_id: b11f0ff1-efdf-42ba-b115-89cffa4886f9
-  m_name: OnClick Mokkoro / PlayingRoom UIButton
+  m_name: OnClick Mokkoro / Playing Room UIButton
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 1
   m_gameEvent: 
@@ -507,7 +507,7 @@ MonoBehaviour:
   ViewName: Unnamed
   UIButtonTriggerAction: 0
   ButtonCategory: Mokkoro
-  ButtonName: PlayingRoom
+  ButtonName: Playing Room
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
   CustomDrawerName: 0
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_minimumOutputSocketsCount: 1
   m_graphId: abc2c378-a1a9-4521-9dc6-71ae88518ad0
   m_id: 1ce634ec-9a57-45a9-bbf8-5173a56fce5c
-  m_name: OnClick Custom / Kitchen UIButton
+  m_name: OnClick Mokkoro / Kitchen UIButton
   m_notes: 
   ErrorNotListeningForAnyGameEvent: 1
   m_gameEvent: 
@@ -580,7 +580,7 @@ MonoBehaviour:
   ViewCategory: General
   ViewName: Unnamed
   UIButtonTriggerAction: 0
-  ButtonCategory: Custom
+  ButtonCategory: Mokkoro
   ButtonName: Kitchen
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
@@ -666,16 +666,16 @@ MonoBehaviour:
   m_name: Playing Room
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Playing Room
   m_onEnterHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Playing Room
 --- !u!114 &11400000
@@ -1134,16 +1134,16 @@ MonoBehaviour:
   m_name: Kitchen
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Kitchen
   m_onEnterHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Store
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Kitchen
 --- !u!114 &4238101280116080992

@@ -16,5 +16,7 @@ MonoBehaviour:
   CategoryNames:
   - Custom
   - General
+  - Mokkoro
   Categories:
   - {fileID: 11400000, guid: 44b389943c4de4a7e974690614a30014, type: 2}
+  - {fileID: 11400000, guid: bb36059b05d3f4bb9a5a56ebab7872e4, type: 2}
