@@ -3,27 +3,33 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IEndDragHandler, IDragHandler
 {
-    [SerializeField] private Canvas canvas;
+    [SerializeField] protected Canvas canvas;
 
-    private RectTransform rectTransform;
-    private Vector3 originalAnchoredPosition;
+    protected RectTransform rectTransform;
+    protected Vector3 originalAnchoredPosition;
+
+    protected virtual void Start() {
+        rectTransform = GetComponent<RectTransform>();
+        originalAnchoredPosition = rectTransform.anchoredPosition;
+        Debug.Log("Start!!");
+    }
 
     public virtual void OnPointerDown(PointerEventData eventData) {
-        Debug.Log("OnPointerDown");
+        //Debug.Log("OnPointerDown");
     }
 
     public virtual void OnDrag(PointerEventData eventData) {
-        Debug.Log("OnDrag");
+        //Debug.Log("OnDrag");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public virtual void OnEndDrag(PointerEventData eventData) {
-        Debug.Log("OnEndDrag");
+        //Debug.Log("OnEndDrag");
         rectTransform.anchoredPosition = originalAnchoredPosition;
     }
-    
-    void Start() {
-        rectTransform = GetComponent<RectTransform>();
-        originalAnchoredPosition = rectTransform.anchoredPosition;
+
+    private void OnEnable() {
+        if(rectTransform != null)
+            rectTransform.anchoredPosition = originalAnchoredPosition;
     }
 }

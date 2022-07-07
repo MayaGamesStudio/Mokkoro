@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mokkoro
+  - Boundry
+  - Ground
+  - BrokenPlatform
   layers:
   - Default
   - TransparentFX

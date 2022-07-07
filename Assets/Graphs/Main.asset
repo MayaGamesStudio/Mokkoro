@@ -1038,13 +1038,13 @@ MonoBehaviour:
   m_name: UI Node
   m_notes: 
   m_onEnterShowViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Item Description
   m_onEnterHideViews: []
   m_onExitShowViews: []
   m_onExitHideViews:
-  - Category: Custom
+  - Category: Mokkoro
     InstantAction: 0
     Name: Item Description
 --- !u!114 &3874001203806028647
