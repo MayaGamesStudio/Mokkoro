@@ -30,7 +30,6 @@ public class PlatformsObjectPool : MonoBehaviour {
     // Called when an item is returned to the pool using Release
     void OnReturnedToPool(GameObject gameobject) {
         gameobject.SetActive(false);
-        JumpMGManager.Instance.CreatePlatform();
     }
 
     // Called when an item is taken from the pool using Get

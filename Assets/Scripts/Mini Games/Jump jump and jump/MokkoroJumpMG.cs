@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MokkoroJumpMG : MonoBehaviour {
@@ -39,7 +37,7 @@ public class MokkoroJumpMG : MonoBehaviour {
         }
         if(collision.gameObject.CompareTag("BrokenPlatform")) {
             body2D.AddForce(Vector2.up * JumpSpeed);
-            Destroy(collision.gameObject);
+            PlatformsObjectPool.Instance.BrokenPlatfomsPool.Release(collision.gameObject);
         }
     }
 }

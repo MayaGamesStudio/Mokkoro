@@ -43,6 +43,10 @@ public class JumpMGManager : MonoBehaviour {
         }
         score = player.transform.position.y < score ? score : (int) player.transform.position.y;
         scoreText.text = "Height: " + score;
+
+        if(score % 10 == 0) {
+            CreatePlatform();
+        }
     }
 
     public void CreatePlatform(int maxRandom = 3) {
