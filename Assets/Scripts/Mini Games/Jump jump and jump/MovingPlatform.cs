@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour {
+public class MovingPlatform : Platform {
     public float MovingSpeed;
 
     private Vector3 targetPosition;
 
-    private void Start() {
-        targetPosition = new Vector3(-5f,transform.position.y);
-    }
     // Update is called once per frame
-    void Update() {
+    protected override void Update() {
+        base.Update();
         if(Vector2.Distance(transform.position, targetPosition) <= 0.1f) {
             targetPosition = new Vector3(-targetPosition.x,targetPosition.y);
         }
         transform.position = Vector2.MoveTowards(transform.position,targetPosition,MovingSpeed * Time.deltaTime);
+    }
+
+    private void OnEnable() {
+        Debug.Log("Log: " + transform.position.y);
+        targetPosition = new Vector3(-5f,transform.position.y);
     }
 }

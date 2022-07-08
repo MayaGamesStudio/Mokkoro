@@ -24,10 +24,10 @@ public class MokkoroJumpMG : MonoBehaviour {
 
     private void Move(float direction) {
         body2D.velocity = new Vector2(direction * MoveSpeed,body2D.velocity.y);
-        if(transform.position.x < -6) {
+        if(transform.position.x < -8.5f) {
             transform.position = new Vector3(-transform.position.x - 0.5f,transform.position.y);
         }
-        if(transform.position.x > 6) {
+        if(transform.position.x > 8.5f) {
             transform.position = new Vector3(-transform.position.x + 0.5f,transform.position.y);
         }
     }
