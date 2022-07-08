@@ -15,7 +15,6 @@ public class MovingPlatform : Platform {
     }
 
     private void OnEnable() {
-        Debug.Log("Log: " + transform.position.y);
         targetPosition = new Vector3(-5f,transform.position.y);
     }
 }

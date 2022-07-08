@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class JumpMGManager : MonoBehaviour {
 
@@ -17,6 +19,11 @@ public class JumpMGManager : MonoBehaviour {
 
     private float currentHeight = -3.5f;
 
+    public TextMeshProUGUI scoreText;
+    private int score = 0;
+
+    public TextMeshProUGUI finalScoreText;
+
     // Start is called before the first frame update
     void Start() {
         for(int i = 0; i < platformsCount; i++) {
@@ -34,6 +41,8 @@ public class JumpMGManager : MonoBehaviour {
         if(player.transform.position.y < Camera.main.transform.position.y - loosingOffset) {
             GameOver();
         }
+        score = player.transform.position.y < score ? score : (int) player.transform.position.y;
+        scoreText.text = "Height: " + score;
     }
 
     public void CreatePlatform(int maxRandom = 3) {
@@ -51,11 +60,19 @@ public class JumpMGManager : MonoBehaviour {
                 platformPrefab = PlatformsObjectPool.Instance.BrokenPlatfomsPool.Get();
                 break;
         }
+        var platform = platformPrefab.GetComponent<Platform>();
+        platform.enabled = false;
         platformPrefab.transform.position = new Vector3(x,currentHeight);
+        platform.enabled = true;
         currentHeight += 4;
     }
 
+    public void GoHome() {
+        SceneManager.LoadScene("Home");
+    }
+
     private void GameOver() {
-        Debug.Log("GameOver");
+        finalScoreText.text = score.ToString();
+        finalScoreText.transform.parent.gameObject.SetActive(true);
     }
 }
