@@ -2,30 +2,19 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class JumpMGManager : MonoBehaviour {
-
-    #region singleton
-    public static JumpMGManager Instance { get; private set; }
-
-    private void Awake() {
-        if(Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
-    #endregion
+public class JumpMGManager : MiniGamesManager {
 
     public int platformsCount;
-    public GameObject player;
+    
     public float loosingOffset;
 
     private float currentHeight = -3.5f;
 
-    public TextMeshProUGUI scoreText;
-    private int score = 0;
-
-    public TextMeshProUGUI finalScoreText;
+    private PlatformsObjectPool objectPool;
 
     // Start is called before the first frame update
     void Start() {
+        objectPool = (PlatformsObjectPool) GenericObjectPool.Instance;
         for(int i = 0; i < platformsCount; i++) {
             var maxRandom = 1;
             if(i > 30) {
@@ -55,13 +44,13 @@ public class JumpMGManager : MonoBehaviour {
         GameObject platformPrefab = null;
         switch(random) {
             case 0:
-                platformPrefab = PlatformsObjectPool.Instance.CommonPlatfomsPool.Get();
+                platformPrefab = objectPool.CommonPlatfomsPool.Get();
                 break;
             case 1:
-                platformPrefab = PlatformsObjectPool.Instance.MovingPlatfomsPool.Get();
+                platformPrefab = objectPool.MovingPlatfomsPool.Get();
                 break;
             case 2:
-                platformPrefab = PlatformsObjectPool.Instance.BrokenPlatfomsPool.Get();
+                platformPrefab = objectPool.BrokenPlatfomsPool.Get();
                 break;
         }
         var platform = platformPrefab.GetComponent<Platform>();

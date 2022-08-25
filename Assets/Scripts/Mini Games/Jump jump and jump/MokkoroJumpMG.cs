@@ -1,17 +1,10 @@
 using UnityEngine;
 
-public class MokkoroJumpMG : MonoBehaviour {
+public class MokkoroJumpMG : MokkoroMiniGames {
     public float JumpSpeed, MoveSpeed;
 
-    private Rigidbody2D body2D;
-
-    // Start is called before the first frame update
-    void Start() {
-        body2D = GetComponent<Rigidbody2D>();    
-    }
-
     // Update is called once per frame
-    void Update() {
+    protected override void Update() {
         var x = Input.GetAxisRaw("Horizontal");
         if(x != 0) {
             Move(x);
@@ -37,7 +30,7 @@ public class MokkoroJumpMG : MonoBehaviour {
         }
         if(collision.gameObject.CompareTag("BrokenPlatform")) {
             body2D.AddForce(Vector2.up * JumpSpeed);
-            PlatformsObjectPool.Instance.BrokenPlatfomsPool.Release(collision.gameObject);
+            ((PlatformsObjectPool) GenericObjectPool.Instance).BrokenPlatfomsPool.Release(collision.gameObject);
         }
     }
 }
