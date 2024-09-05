@@ -454,11 +454,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345a1f7eb3b024f409d71e4eeecb9322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformsCount: 30
   player: {fileID: 2446652763132069911}
-  loosingOffset: 20
   scoreText: {fileID: 335687988}
   finalScoreText: {fileID: 940971554}
+  platformsCount: 30
+  loosingOffset: 20
 --- !u!4 &466096270
 Transform:
   m_ObjectHideFlags: 0
@@ -486,10 +486,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07de01cb097f843f38fa9f3ab13c2e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platforms: {fileID: 25940028}
-  commonPlatformPrefab: {fileID: 4198530833360815782, guid: 01dda8292b0084991b21026693d136b7, type: 3}
-  movingPlatformPrefab: {fileID: 6905142800714077920, guid: 4185491a9f2c34d7f95ba87032540bc0, type: 3}
-  brokenPlatformPrefab: {fileID: 517704486591010047, guid: a70bf18936fa4421a9eb736f2312260d, type: 3}
+  parent: {fileID: 25940028}
+  prefabs:
+  - {fileID: 517704486591010047, guid: a70bf18936fa4421a9eb736f2312260d, type: 3}
+  - {fileID: 6905142800714077920, guid: 4185491a9f2c34d7f95ba87032540bc0, type: 3}
+  - {fileID: 4198530833360815782, guid: 01dda8292b0084991b21026693d136b7, type: 3}
 --- !u!1 &641577076
 GameObject:
   m_ObjectHideFlags: 0
